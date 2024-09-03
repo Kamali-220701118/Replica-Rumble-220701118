@@ -1,0 +1,70 @@
+
+*,
+*:focus{outline: none}
+body{
+    background-color: rgb(8, 153, 243);
+}
+.form{
+  width: 500px;
+  height:400px;
+  margin:0 auto;
+  margin-top: 150px;
+  font-family: sans-serif;
+  background: #fff;
+  padding: 10px;
+  background:rgb(30, 180, 280);
+}
+.form-item{
+  position: relative;
+  margin-bottom: 15px
+}
+.form-item input{
+    margin:0 auto;
+  display: block;
+  width: 400px;
+  height: 40px;
+  background: transparent;
+  border: solid 1px #fff;
+  transition: all .3s ease;
+  padding: 0 15px;
+}
+.form-item input:focus{
+  border-color: rgb(5, 77, 77);
+}
+.form-item label{
+  position: absolute;
+  cursor: text;
+  z-index: 2;
+  top: 10px;
+  left: 28px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 10px;
+  color: #999;
+  transition: all .3s ease
+}
+.form-item input:focus + label,
+.form-item input:valid + label{
+  font-size: 11px;
+  top: -5px
+}
+.form-item input:focus + label{
+  color: rgb(10, 125, 226);
+}
+.form button{
+    height:35px;
+    width:350px;
+    border-radius:5px;
+    margin:0 auto;
+    position: absolute;
+    left:600px;
+    background: rgb(8, 124, 219);
+}
+.form a{
+    position: absolute;
+    left:690px;
+}
+.form a:hover{
+    color:rgb(0, 166, 255);
+    text-shadow: blue;
+}
